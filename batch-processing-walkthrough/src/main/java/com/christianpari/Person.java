@@ -5,6 +5,8 @@ public class Person {
   private String lastName;
   private String firstName;
 
+  public Person() {}
+
   // CONSTRUCTORS
   public Person(
     String firstName
