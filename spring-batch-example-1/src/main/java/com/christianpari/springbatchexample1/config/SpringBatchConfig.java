@@ -50,6 +50,7 @@ public class SpringBatchConfig {
       .writer(itemWriter) // third
       .build();
 
+    // EXTRACT TRANSFER LOAD PROCESS
     return jobBuilderFactory.get("ETL-Load") // the name of the JOB
               .incrementer(new RunIdIncrementer()) // IDs are assigned to Batch Runs, this auto increments each Run
               .start(step) // you can have multiple steps (use flow) if only one, use start

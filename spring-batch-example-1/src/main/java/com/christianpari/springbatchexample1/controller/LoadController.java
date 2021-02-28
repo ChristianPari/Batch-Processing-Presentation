@@ -44,13 +44,6 @@ public class LoadController {
 
     System.out.println("JobExecution: " + jobExecution.getStatus()); // displays the status of the Batch
 
-    // displaying the process of th Batch
-    System.out.println("Batch is Running...");
-    // upon Batch completion the loop will end
-    while (jobExecution.isRunning()) {
-      System.out.println("...");
-    }
-
     return jobExecution.getStatus(); // return the Batch Status which will be COMPLETED or FAILED
   }
 }
