@@ -11,18 +11,18 @@ public class User {
   private Integer id;
   private String name;
   private String dept;
-  private Date time;
+  private Date time; // dont need to add
 
   public User(
     Integer id
     , String name
     , String dept
-    , Date time
+    , Date time // dont need to add
   ) {
     this.id = id;
     this.name = name;
     this.dept = dept;
-    this.time = time;
+    this.time = time; // dont need to add
   }
 
   public User() {}
@@ -51,11 +51,11 @@ public class User {
     this.dept = dept;
   }
 
-  public Date getTime() {
+  public Date getTime() { // dont need to add
     return time;
   }
 
-  public void setTime(Date time) {
+  public void setTime(Date time) { // dont need to add
     this.time = time;
   }
 
